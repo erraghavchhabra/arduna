@@ -110,6 +110,8 @@ p{
 .navbar.navbar-scrolled{
     padding-top: 5px;
     padding-bottom: 5px;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar.navbar-scrolled .navbar-brand img {
@@ -281,7 +283,7 @@ p{
     z-index: 3
 }
 .serv-sec{
-    padding-top: 60px;
+    padding-top: 90px;
     padding-bottom: 160px
 }
 
@@ -476,8 +478,15 @@ p{
 .ast-box .ast-con{
     width: 60%;
 }
-.ast-box .ast-con h3{font-style: normal;}
-.ast-box .ast-con p{margin-bottom: 0px;width: 80%;font-weight: 500;color: var(--accent-gold);}
+.ast-box .ast-con h3{
+    font-style: normal;
+}
+.ast-box .ast-con p{
+    margin-bottom: 0px;
+    width: 80%;
+    font-weight: 500;
+    color: var(--accent-gold);
+}
 .ast-box .ast-img{
 
 }
@@ -553,7 +562,7 @@ p{
 }
 
 footer {
-    padding: 1rem 1.5rem 2rem;
+    padding: 3rem 1.5rem 2rem;
     text-align: center;
 }
 
@@ -562,8 +571,9 @@ footer {
     margin: 0 auto;
 }
 .footer-container .ft-logo{
-    width: 230px;
+    width: 180px;
     margin-bottom: 30px;
+
 }
 
 
@@ -695,8 +705,14 @@ blockquote {
 
 }
 @media (max-width: 768px){
+    .why-box{
+        padding: 20px
+    }
+    .main-h{
+        font-size: 36px
+    }
     .hero {
-        min-height: 85vh;
+        min-height: 75vh;
     }
     .hero h1 {
         font-size: 2rem;
@@ -706,7 +722,7 @@ blockquote {
     }
     .hero-carousel,
     .hero-slide {
-        min-height: 85vh;
+        min-height: 75vh;
     }
     .steps-grid {
         grid-template-columns: repeat(1, 1fr);
@@ -717,5 +733,44 @@ blockquote {
     .shape-1.bottom {
         top: inherit;
         bottom: -2px;
+    }
+    .ast-box{
+        display: block
+    }
+    .ast-box .ast-con{
+        width: 100%
+    }
+    .ast-box .ast-con h3{
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .ast-box .ast-con p{
+        width: 100%;
+        margin-bottom: 25px
+    }
+    .ast-box .ast-img div img {
+        width: 100%;
+    }
+    .quote-section {
+        padding: 2rem 1.5rem;
+    }
+}
+@media (max-width: 992px){
+    .navbar{
+        position: fixed;
+        width: 100%;
+    }
+
+    .navbar-brand img {
+        width: 90px;
+    }
+    .ab-s1 {
+        top: -50px;
+    }
+    .ab-s2 {
+        bottom: 80px;
+    }
+    .steps-grid .step h3{
+        margin-top: 20px
     }
 }
